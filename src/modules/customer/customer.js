@@ -66,7 +66,7 @@ export const me = async userId => {
     const user = await Customer.findById(userId);
 
     if (!user) {
-      throw new Error('User not existing');
+      throw new Error('User not exist');
     }
 
     return user;

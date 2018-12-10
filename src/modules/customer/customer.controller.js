@@ -25,7 +25,7 @@ export const create = async (req, res) => {
     } else if (provider === 'GOOGLE') {
       data = await AuthProvider.Google.authAsync(token);
     } else {
-      res.sendStatus(400); 
+      res.sendStatus(400);
     }
 
     const customer = await getOrCreateCustomer(data, provider);

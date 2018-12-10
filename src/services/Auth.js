@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 const JWT_SECRET = 'helloworld';
 
 const JWT_OPTS = {
-  issuer: 'kasiLam',
+  issuer: 'KasiLam',
 };
 
 const createToken = user => {

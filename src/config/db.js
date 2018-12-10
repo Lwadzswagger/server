@@ -7,10 +7,12 @@ mongoose.Promise = global.Promise;
 mongoose.set('debug',true);
 
 try {
-    mongoose.connect(DB_URL ,
-         {  useCreateIndex: true,
-        useNewUrlParser: true,
-    })
+    mongoose.connect(
+        DB_URL,
+        {
+          useNewUrlParser: true,
+        },
+      );
 } catch (error) {
     mongoose.createConnection(DB_URL ,
         {

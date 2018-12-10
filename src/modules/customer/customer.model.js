@@ -25,4 +25,3 @@ const CustomerSchema = new Schema(
 CustomerSchema.index({ email: 1 });
 
 export default mongoose.model('Customer', CustomerSchema);
-// something something/
