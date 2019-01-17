@@ -1,11 +1,11 @@
 {
   "name": "server",
+  "engines": {
+    "node": ">=50.9"
+  },
+  "engineStrict": true,
   "version": "1.0.0",
   "main": "index.js",
-  "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
-  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js"
   },
